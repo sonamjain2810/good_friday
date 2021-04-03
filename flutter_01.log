@@ -1,0 +1,105 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run --machine --target lib/main.dart -d bbd4df557e2d987e3f4925c1048f8057dffd8517 --dart-define=flutter.inspector.structuredErrors=true --start-paused --web-server-debug-protocol ws --web-server-debug-backend-protocol ws --web-allow-expose-url
+
+## exception
+
+ClientException: Connection closed while receiving data
+
+```
+#0      IOClient.send.<anonymous closure> (package:http/src/io_client.dart:50:13)
+#1      _invokeErrorHandler (dart:async/async_error.dart:16:24)
+#2      _HandleErrorStream._handleError (dart:async/stream_pipe.dart:282:9)
+#3      _ForwardingStreamSubscription._handleError (dart:async/stream_pipe.dart:161:13)
+#4      _HttpClientResponse.listen.<anonymous closure> (dart:_http/http_impl.dart:441:16)
+#5      _rootRunBinary (dart:async/zone.dart:1214:47)
+#6      _CustomZone.runBinary (dart:async/zone.dart:1107:19)
+#7      _CustomZone.runBinaryGuarded (dart:async/zone.dart:1013:7)
+#8      _BufferingStreamSubscription._sendError.sendError (dart:async/stream_impl.dart:376:15)
+#9      _BufferingStreamSubscription._sendError (dart:async/stream_impl.dart:394:16)
+#10     _BufferingStreamSubscription._addError (dart:async/stream_impl.dart:294:7)
+#11     _ForwardingStreamSubscription._addError (dart:async/stream_pipe.dart:132:11)
+#12     _addErrorWithReplacement (dart:async/stream_pipe.dart:180:8)
+#13     _HandleErrorStream._handleError (dart:async/stream_pipe.dart:287:11)
+#14     _ForwardingStreamSubscription._handleError (dart:async/stream_pipe.dart:161:13)
+#15     _rootRunBinary (dart:async/zone.dart:1214:47)
+#16     _CustomZone.runBinary (dart:async/zone.dart:1107:19)
+#17     _CustomZone.runBinaryGuarded (dart:async/zone.dart:1013:7)
+#18     _BufferingStreamSubscription._sendError.sendError (dart:async/stream_impl.dart:376:15)
+#19     _BufferingStreamSubscription._sendError (dart:async/stream_impl.dart:394:16)
+#20     _BufferingStreamSubscription._addError (dart:async/stream_impl.dart:294:7)
+#21     _SyncStreamControllerDispatch._sendError (dart:async/stream_controller.dart:812:19)
+#22     _StreamController._addError (dart:async/stream_controller.dart:690:7)
+#23     _StreamController.addError (dart:async/stream_controller.dart:642:5)
+#24     _HttpParser._reportBodyError (dart:_http/http_parser.dart:1158:22)
+#25     _HttpParser._onDone (dart:_http/http_parser.dart:865:9)
+#26     _rootRun (dart:async/zone.dart:1182:47)
+#27     _CustomZone.run (dart:async/zone.dart:1093:19)
+#28     _CustomZone.runGuarded (dart:async/zone.dart:997:7)
+#29     _BufferingStreamSubscription._sendDone.sendDone (dart:async/stream_impl.dart:410:13)
+#30     _BufferingStreamSubscription._sendDone (dart:async/stream_impl.dart:420:15)
+#31     _BufferingStreamSubscription._close (dart:async/stream_impl.dart:305:7)
+#32     _SyncStreamControllerDispatch._sendDone (dart:async/stream_controller.dart:816:19)
+#33     _StreamController._closeUnchecked (dart:async/stream_controller.dart:671:7)
+#34     _StreamController.close (dart:async/stream_controller.dart:664:5)
+#35     _Socket._onError (dart:io-patch/socket_patch.dart:1993:19)
+#36     _rootRunBinary (dart:async/zone.dart:1214:47)
+#37     _CustomZone.runBinary (dart:async/zone.dart:1107:19)
+#38     _CustomZone.runBinaryGuarded (dart:async/zone.dart:1013:7)
+#39     _BufferingStreamSubscription._sendError.sendError (dart:async/stream_impl.dart:376:15)
+#40     _BufferingStreamSubscription._sendError (dart:async/stream_impl.dart:391:18)
+#41     _BufferingStreamSubscription._addError (dart:async/stream_impl.dart:294:7)
+#42     _SyncStreamControllerDispatch._sendError (dart:async/stream_controller.dart:812:19)
+#43     _StreamController._addError (dart:async/stream_controller.dart:690:7)
+#44     _StreamController.addError (dart:async/stream_controller.dart:642:5)
+#45     new _RawSocket.<anonymous closure> (dart:io-patch/socket_patch.dart:1518:23)
+#46     _rootRunBinary (dart:async/zone.dart:1222:13)
+#47     _CustomZone.runBinary (dart:async/zone.dart:1107:19)
+#48     _CustomZone.runBinaryGuarded (dart:async/zone.dart:1013:7)
+#49     _CustomZone.bindBinaryCallbackGuarded.<anonymous closure> (dart:async/zone.dart:1048:33)
+#50     _NativeSocket.reportError (dart:io-patch/socket_patch.dart:1256:32)
+#51     _NativeSocket.multiplex (dart:io-patch/socket_patch.dart:1102:13)
+#52     _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:168:12)
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel master, 1.24.0-6.0.pre, on Mac OS X 10.15.6 19G2021 darwin-x64, locale en-IN)
+    • Flutter version 1.24.0-6.0.pre at /Volumes/HDD2/flutter
+    • Framework revision 13896b3bd1 (4 months ago), 2020-10-28 19:43:19 -0700
+    • Engine revision 073263e39d
+    • Dart version 2.11.0 (build 2.11.0-260.0.dev)
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 29.0.3)
+    • Android SDK at /Users/honey/Library/Android/sdk
+    • Platform android-29, build-tools 29.0.3
+    • Java binary at: /Applications/Android Studio.app/Contents/jre/jdk/Contents/Home/bin/java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_242-release-1644-b3-6222593)
+    • All Android licenses accepted.
+
+[✓] Xcode - develop for iOS and macOS (Xcode 12.3)
+    • Xcode at /Applications/Xcode.app/Contents/Developer
+    • Xcode 12.3, Build version 12C33
+    • CocoaPods version 1.10.1
+
+[✓] Android Studio (version 4.0)
+    • Android Studio at /Applications/Android Studio.app/Contents
+    • Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    • Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    • Java version OpenJDK Runtime Environment (build 1.8.0_242-release-1644-b3-6222593)
+
+[✓] VS Code (version 1.54.1)
+    • VS Code at /Applications/Visual Studio Code.app/Contents
+    • Flutter extension version 3.20.0
+
+[✓] Connected device (1 available)
+    • iPhone (mobile) • bbd4df557e2d987e3f4925c1048f8057dffd8517 • ios • iOS 14.3
+
+• No issues found!
+```

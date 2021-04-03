@@ -1,0 +1,36 @@
+class Gifs{
+  Gifs._();
+  static const gifs_path = [
+    "http://www.andiwiniosapps.in/good_friday_message/good_friday_gifs/1.gif",
+    "http://www.andiwiniosapps.in/good_friday_message/good_friday_gifs/2.gif",
+    "http://www.andiwiniosapps.in/good_friday_message/good_friday_gifs/3.gif",
+    "http://www.andiwiniosapps.in/good_friday_message/good_friday_gifs/4.gif",
+    "http://www.andiwiniosapps.in/good_friday_message/good_friday_gifs/5.gif",
+    "http://www.andiwiniosapps.in/good_friday_message/good_friday_gifs/6.gif",
+    "http://www.andiwiniosapps.in/good_friday_message/good_friday_gifs/7.gif",
+    "http://www.andiwiniosapps.in/good_friday_message/good_friday_gifs/8.gif",
+    "http://www.andiwiniosapps.in/good_friday_message/good_friday_gifs/9.gif",
+    "http://www.andiwiniosapps.in/good_friday_message/good_friday_gifs/10.gif",
+    "http://www.andiwiniosapps.in/good_friday_message/good_friday_gifs/11.gif",
+    "http://www.andiwiniosapps.in/good_friday_message/good_friday_gifs/12.gif",
+    //"http://www.andiwiniosapps.in/good_friday_message/good_friday_gifs/13.gif",
+    "http://www.andiwiniosapps.in/good_friday_message/good_friday_gifs/14.gif",
+    "http://www.andiwiniosapps.in/good_friday_message/good_friday_gifs/15.gif",
+    "http://www.andiwiniosapps.in/good_friday_message/good_friday_gifs/16.gif",
+    "http://www.andiwiniosapps.in/good_friday_message/good_friday_gifs/17.gif",
+    "http://www.andiwiniosapps.in/good_friday_message/good_friday_gifs/18.gif",
+    "http://www.andiwiniosapps.in/good_friday_message/good_friday_gifs/19.gif",
+    "http://www.andiwiniosapps.in/good_friday_message/good_friday_gifs/20.gif",
+    "http://www.andiwiniosapps.in/good_friday_message/good_friday_gifs/21.gif",
+    "http://www.andiwiniosapps.in/good_friday_message/good_friday_gifs/22.gif",
+    "http://www.andiwiniosapps.in/good_friday_message/good_friday_gifs/23.gif",
+    "http://www.andiwiniosapps.in/good_friday_message/good_friday_gifs/24.gif",
+    "http://www.andiwiniosapps.in/good_friday_message/good_friday_gifs/25.gif",
+    "http://www.andiwiniosapps.in/good_friday_message/good_friday_gifs/26.gif",
+    "http://www.andiwiniosapps.in/good_friday_message/good_friday_gifs/27.gif",
+    "http://www.andiwiniosapps.in/good_friday_message/good_friday_gifs/28.gif",
+    "http://www.andiwiniosapps.in/good_friday_message/good_friday_gifs/29.gif",
+    "http://www.andiwiniosapps.in/good_friday_message/good_friday_gifs/30.gif",
+  
+  ];
+}
